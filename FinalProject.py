@@ -9,7 +9,33 @@ class GuessingGame:
         Args: 0
         Only used for storing values, not going to take any arguments 
     """
- 
+  def readdict():
+    "”” Uses with statements to open and read python  file with dictionaries
+        Args: 0 
+        Returns: dictionary 
+      """
+  def guess_input():
+    """ Conditional expressions that verify whether input matches dict values 
+        Args: 0 
+        Returns: boolean """
+
+  def tries(inputnumber):
+    """ Calculates the number of tries remaining using list comprehensions
+        Args: 1
+        Inputnumber : int
+        Returns: int """
+
+  def hints():
+     """ Uses f strings to print out hints depending on the number of tries left
+         Args: 0
+         Returns: str """
+
+  def main():
+      """ Executes all class functions """
+
+  if __name__ == ‘__main__’ : statement
+
+
   def parse_args(argslist): 
     """ Parse command line arguments. 
         Expect 5 mandatory arguments: 
