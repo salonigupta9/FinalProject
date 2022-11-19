@@ -2,7 +2,11 @@
 class GuessingGame: 
   """ This is the main class for our program. It will store different 
   functions""" 
-  def 
+  def actors_dict():
+    """ name = str, name of the actor would be the value, Brad Pitt 
+        genre = str, genre of the actor's movie, Action
+        ethnicity = str, ethnicity of the actor, White 
+    """
  
   def parse_args(argslist): 
     """ Parse command line arguments. 
