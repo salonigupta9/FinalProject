@@ -6,6 +6,8 @@ class GuessingGame:
     """ name = str, name of the actor would be the value, Brad Pitt 
         genre = str, genre of the actor's movie, Action
         ethnicity = str, ethnicity of the actor, White 
+        Args: 0
+        Only used for storing values, not going to take any arguments 
     """
  
   def parse_args(argslist): 
