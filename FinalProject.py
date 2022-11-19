@@ -10,7 +10,7 @@ class GuessingGame:
         Only used for storing values, not going to take any arguments 
     """
   def readdict():
-    "”” Uses with statements to open and read python  file with dictionaries
+    """" Uses with statements to open and read python  file with dictionaries
         Args: 0 
         Returns: dictionary 
       """
