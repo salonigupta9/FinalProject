@@ -2,6 +2,7 @@
 class GuessingGame: 
   """ This is the main class for our program. It will store different 
   functions""" 
+  
   def actors_dict():
     """ name = str, name of the actor would be the value, Brad Pitt 
         genre = str, genre of the actor's movie, Action
@@ -9,7 +10,14 @@ class GuessingGame:
         Args: 0
         Only used for storing values, not going to take any arguments 
     """
-  def readdict():
+    def user_input():
+      “”” Takes user input based on the question printed in the output.
+         Args: 0
+         Side Effects: 
+         Print(f”Please answer the following question: {question}”)
+      """
+    
+  def read_dict():
     """" Uses with statements to open and read python  file with dictionaries
         Args: 0 
         Returns: dictionary 
@@ -24,11 +32,22 @@ class GuessingGame:
         Args: 1
         Inputnumber : int
         Returns: int """
+     
+     List comprehension:
+     Tries  = [1, 2,...]
+     Num_of_tries = [x for x in tries if “number” in x]
+
+       Side Effects: 
+       Print(f”You now have {num_of_tries} left to guess the {actor’s characteristic}.”)
+      """
 
   def hints():
      """ Uses f strings to print out hints depending on the number of tries left
          Args: 0
-         Returns: str """
+         Returns: str 
+         Side Effects:
+          Print (f”Hint: This actor has a birthday in {month of actor’s birthday}.”)
+         """
 
   def main():
       """ Executes all class functions """
