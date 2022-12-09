@@ -26,6 +26,9 @@ class GuessingGame:
     """ Conditional expressions that verify whether input matches dict values 
         Args: 0 
         Returns: boolean """
+         
+        print (f"Please answer the following: {question_1}")
+
 
   def tries(inputnumber):
     """ Calculates the number of tries remaining using list comprehensions
@@ -34,13 +37,16 @@ class GuessingGame:
         Returns: int """
      
      List comprehension:
-     Tries  = [1, 2,...]
-     Num_of_tries = [x for x in tries if “number” in x]
-
+    
        Side Effects: 
-       Print(f”You now have {num_of_tries} left to guess the {actor’s characteristic}.”)
-      """
-
+       Print(f”You now have {num_of_tries} left to guess the {actor’s characteristic}.”
+     """
+    
+        total_guesses  = [1, 2, 3]
+        remaining_guesses = [x - 1 for guesses in total_guesses if total_guesses =< 3]
+      
+        print (f"You have {num_of_tries} remaining to guess the actor's {characterstic_1}.")
+    
   def hints():
      """ Uses f strings to print out hints depending on the number of tries left
          Args: 0
@@ -48,11 +54,16 @@ class GuessingGame:
          Side Effects:
           Print (f”Hint: This actor has a birthday in {month of actor’s birthday}.”)
          """
-
+        
+        print(f"Hint: This actor has a birthday in {birth_month}")
+      
+      
   def main():
       """ Executes all class functions """
 
-  if __name__ == ‘__main__’ : statement
+  if __name__ == ‘__main__’ : 
+    
+  args = parse_args(sys.argv[1:])
 
 
   def parse_args(argslist): 
