@@ -177,6 +177,14 @@ class GuessingGame:
     else:
       print("Oops:( I don't know who this could be...")
 
+def __repr__(self, ans, age, ethnicity, sex):
+    """Returns printed representation of the celebrity and the user inputs.
+    
+    Return:
+      str: statement with correct name of the celebrity and their matching characterstics.
+    """
+    return (f"{ans} is the correct name of the celebrity. They are {age} years old, {ethnicity}, and {sex}.")
+  
       
 def main():
   """ Executes all class functions """
@@ -190,20 +198,38 @@ if __name__ == "__main__":
    main()
   
 
-
 def parse_args(argslist): 
-    """ Parse command line arguments. 
-        Expect 3 mandatory arguments: 
-        int: dictionary of age entered by users 
-        str: dictionary containing race/ethnicity entered by users 
-        str: dict containing gender entered by users 
+
+  """ Parse command line arguments. 
+
+        Expect 4 mandatory arguments: 
+        str: dict of ethnicity entered by users 
+
+        str: dict containing sex entered by users 
+
+        int: dict containing age entered by users 
+
         str: dict containing answers to a specific question
-        regarding a specific actor from the user input
+
+        regarding a specific actor from the user input 
+
+  
         Args: 
-        argslist (list of str/int): arguments from the command line
+        Argslist (list of str/int):Takes arguments from the command line
+
         Returns: 
-        user inputs: the parsed arguments """ 
-    
+        User inputs: the parsed arguments 
+        """ 
+        
+  parser = ArgumentParser()
+  parser.add_argument("filepath", type=dict, help= "json file of dictionary"
+                      " celebrity data (name, sex, ethnicity, age)")
+  parser.add_argument("name", type=str,default=None, help="celebrity's name")
+  parser.add_argument("ethnicity", type=str, default=None,help="race of actor/actress")
+  parser.add_argument("age", type=int, default=None,
+                        help="age actor/actress")
+  return parser.parse_args(arglist)
+
         
         
         
