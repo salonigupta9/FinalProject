@@ -3,6 +3,9 @@ class GuessingGame:
   """ This is the main class for our program. It will store different 
   functions """ 
   
+   def __init__(self) -> None:
+      self.actors = self.read_dict()
+  
    def actors_dict():
     """ name = str, name of the actor would be the value, Brad Pitt 
         genre = str, genre of the actor's movie, Action
@@ -10,6 +13,9 @@ class GuessingGame:
         Args: 0
         Only used for storing values, not going to take any arguments 
     """
+      ans = {i for i in self.actors if self.actors[i] == value}
+      return str(ans).replace("{","").replace("}","").replace("'","")
+    
    def user_input():
       
       """ Takes user input based on the question printed in the output.
@@ -17,6 +23,15 @@ class GuessingGame:
          Side Effects: 
          Print(f”Please answer the following question: {question}”)
         """
+      age = input("Enter age: ")
+
+      race = input("Enter Ethnicity: ")
+
+      sex = input("Enter sex: ")
+
+      ans = {'age':age, 'race/ethnicity':race, 'sex':sex}
+
+      return ans
     
   def read_dict(self):
     """ Uses with statements to open and read python file with dictionaries
