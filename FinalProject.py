@@ -182,6 +182,8 @@ def __repr__(self, ans, age, ethnicity, sex):
     
     Return:
       str: statement with correct name of the celebrity and their matching characterstics.
+      
+      Darian Brown did this function and it showcases the magic methods other than __init__
     """
     return (f"{ans} is the correct name of the celebrity. They are {age} years old, {ethnicity}, and {sex}.")
   
@@ -219,6 +221,8 @@ def parse_args(argslist):
 
         Returns: 
         User inputs: the parsed arguments 
+        
+        Darian Brown did this function and it showcases the ArgumentParser class.
         """ 
         
   parser = ArgumentParser()
