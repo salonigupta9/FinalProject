@@ -1,4 +1,4 @@
-
+import json 
 class GuessingGame: 
   """ This is the main class for our program. It will store different 
   functions """ 
