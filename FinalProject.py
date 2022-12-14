@@ -11,7 +11,8 @@ class GuessingGame:
         genre = str, genre of the actor's movie, Action
         ethnicity = str, ethnicity of the actor, White 
         Args: 0
-        Only used for storing values, not going to take any arguments 
+        Only used for storing values, not going to take any arguments
+        Saloni did this part and it showcases list comprehension.
     """
       ans = {i for i in self.actors if self.actors[i] == value}
       return str(ans).replace("{","").replace("}","").replace("'","")
@@ -22,6 +23,8 @@ class GuessingGame:
          Args: 0
          Side Effects: 
          Print(f”Please answer the following question: {question}”)
+         Saloni Gupta did this part and it showcase optional parameters and
+         keyword arguments.
         """
       age = input("Enter age: ")
 
@@ -36,7 +39,8 @@ class GuessingGame:
   def read_dict(self):
     """ Uses with statements to open and read python file with dictionaries
         Args: 0 
-        Returns: dictionary """
+        Returns: dictionary
+        Jasmi Kevadia did this part and it showcases with statements"""
     d = {}
     with open("dict.json") as f:
       d = json.load(f)
@@ -47,7 +51,8 @@ class GuessingGame:
         is the same one the dictionary resulted in
         Args: 1
         name = str
-        Returns: str confirming name of actor """
+        Returns: str confirming name of actor 
+        Jasmi Kevadia did this part and it showcases the use of conditional expressions"""
     if name in self.actors:
       if name == "Jake Gyllenhaal":
         q1 = input("Were they in Brokeback Mountain?")
@@ -188,16 +193,12 @@ if __name__ == "__main__":
 
 def parse_args(argslist): 
     """ Parse command line arguments. 
-        Expect 5 mandatory arguments: 
-        str: dictionary of ethnicity entered by users 
-        str: dictionary containing gender entered by users 
-        int: dict containing age entered by users 
+        Expect 3 mandatory arguments: 
+        int: dictionary of age entered by users 
+        str: dictionary containing race/ethnicity entered by users 
+        str: dict containing gender entered by users 
         str: dict containing answers to a specific question
-        regarding a specific actor from the user input 
-        str: dict containing answers to a specific question 
         regarding a specific actor from the user input
-        int: dict containing birthday entered by users 
-        str: dict containing genre of movies entered by users 
         Args: 
         argslist (list of str/int): arguments from the command line
         Returns: 
